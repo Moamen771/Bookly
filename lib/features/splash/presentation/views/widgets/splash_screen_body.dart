@@ -1,14 +1,16 @@
+import 'package:booklyapp/features/home/presentation/views/home_view.dart';
 import 'package:booklyapp/features/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class SplashScreenBody extends StatefulWidget {
-  const SplashScreenBody({super.key});
+class SplashViewBody extends StatefulWidget {
+  const SplashViewBody({super.key});
 
   @override
-  State<SplashScreenBody> createState() => _SplashScreenBodyState();
+  State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashScreenBodyState extends State<SplashScreenBody>
+class _SplashViewBodyState extends State<SplashViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<Offset> slidingAnimation;
@@ -17,6 +19,7 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
   void initState() {
     super.initState();
     textAnimation();
+    navigateToHome();
   }
 
   @override
@@ -37,6 +40,18 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
           SlidingText(slidingAnimation: slidingAnimation)
         ],
       ),
+    );
+  }
+
+  void navigateToHome() {
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Get.to(
+          HomeView(),
+          transition: Transition.fade,
+        );
+      },
     );
   }
 
