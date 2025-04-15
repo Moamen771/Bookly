@@ -1,4 +1,4 @@
-import 'package:booklyapp/core/app_colors.dart';
+import 'package:booklyapp/core/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'features/splash/presentation/views/splash_screen.dart';
