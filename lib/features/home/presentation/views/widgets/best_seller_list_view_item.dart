@@ -29,6 +29,8 @@ class BestSellerListViewItem extends StatelessWidget {
             ),
             SizedBox(width: 30),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 3,
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .50,
@@ -36,8 +38,21 @@ class BestSellerListViewItem extends StatelessWidget {
                     'Harry Potter And The Goblet Of Fire',
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: Styles.textStyle20,
+                    style: Styles.textStyleTwo20,
                   ),
+                ),
+                Text(
+                  'J.K. Rowling',
+                  style: Styles.textStyle14,
+                ),
+                Row(
+                  children: [
+                    Text(
+                      '19,99 L.E',
+                      style: Styles.textStyle20
+                          .copyWith(fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
               ],
             )

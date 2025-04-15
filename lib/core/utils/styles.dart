@@ -14,7 +14,11 @@ abstract class Styles {
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
-  static var textStyle20 = GoogleFonts.playfairDisplay(
+  static var textStyle20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.normal,
+  );
+  static var textStyleTwo20 = GoogleFonts.playfairDisplay(
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
