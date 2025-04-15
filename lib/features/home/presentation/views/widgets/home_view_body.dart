@@ -15,7 +15,7 @@ class HomeViewBody extends StatelessWidget {
         CustomAppBar(),
         FeaturedBooksListView(),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+          padding: const EdgeInsets.only(left: 30, top: 50, bottom: 20),
           child: Text(
             'Best Sellers',
             style: Styles.textStyle18,
