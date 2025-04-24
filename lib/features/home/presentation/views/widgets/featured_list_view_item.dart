@@ -14,10 +14,11 @@ class FeaturedListViewItem extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             image: DecorationImage(
-                image: NetworkImage(
-                  AssetsData.testImage,
-                ),
-                fit: BoxFit.fill),
+              image: NetworkImage(
+                AssetsData.testImage,
+              ),
+              fit: BoxFit.fill,
+            ),
           ),
         ),
       ),

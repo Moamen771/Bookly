@@ -52,8 +52,9 @@ class BestSellerListViewItem extends StatelessWidget {
                     children: [
                       Text(
                         '19,99 L.E',
-                        style: Styles.textStyle20
-                            .copyWith(fontWeight: FontWeight.bold),
+                        style: Styles.textStyle20.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       BookRating(),
                     ],
