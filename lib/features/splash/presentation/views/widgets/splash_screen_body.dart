@@ -36,7 +36,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Image.asset('assets/images/bookly_logo.png'),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           SlidingText(slidingAnimation: slidingAnimation)
         ],
       ),
@@ -45,7 +45,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome() {
     Future.delayed(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () {
         GoRouter.of(context).push(AppRouter.kHomeView);
       },
@@ -55,10 +55,10 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void textAnimation() {
     animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
     slidingAnimation = Tween<Offset>(
-      begin: Offset(0, 30),
+      begin: const Offset(0, 30),
       end: Offset.zero,
     ).animate(animationController);
     animationController.forward();

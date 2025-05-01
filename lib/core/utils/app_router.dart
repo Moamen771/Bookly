@@ -11,15 +11,15 @@ abstract class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => SplashView(),
+        builder: (context, state) => const SplashView(),
       ),
       GoRoute(
         path: kHomeView,
-        builder: (context, state) => HomeView(),
+        builder: (context, state) => const HomeView(),
       ),
       GoRoute(
         path: kBookDetailsView,
-        builder: (context, state) => BookDetailsView(),
+        builder: (context, state) => const BookDetailsView(),
       ),
     ],
   );
