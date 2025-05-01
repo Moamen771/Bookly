@@ -1,14 +1,13 @@
-import 'package:booklyapp/features/home/presentation/views/widgets/book_list_view_item.dart';
 import 'package:flutter/material.dart';
+import '../../../../home/presentation/views/widgets/book_list_view_item.dart';
 
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
+class SearchResultListView extends StatelessWidget {
+  const SearchResultListView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SliverFillRemaining(
+    return Expanded(
       child: ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
         padding: EdgeInsets.zero,
         itemCount: 10,
         itemBuilder: (context, index) {
