@@ -25,16 +25,16 @@ class BestSellerListViewItem extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
-                    image: DecorationImage(
-                      image: NetworkImage(
-                        AssetsData.testImage,
+                    image: const DecorationImage(
+                      image: AssetImage(
+                        AssetsData.testBookImage,
                       ),
                       fit: BoxFit.fill,
                     ),
                   ),
                 ),
               ),
-              SizedBox(width: 30),
+              const SizedBox(width: 30),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,7 +49,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         style: Styles.textStyleTwo20,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'J.K. Rowling',
                       style: Styles.textStyle14,
                     ),
@@ -62,7 +62,7 @@ class BestSellerListViewItem extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        BookRating(),
+                        const BookRating(),
                       ],
                     ),
                   ],

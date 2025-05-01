@@ -4,6 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 abstract class Styles {
   static const textStyle14 = TextStyle(
     fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static const textStyleNormal14 = TextStyle(
+    fontSize: 14,
     fontWeight: FontWeight.normal,
   );
   static const textStyle16 = TextStyle(
@@ -14,16 +18,16 @@ abstract class Styles {
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
-  static var textStyle20 = TextStyle(
+  static const textStyle20 = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
-  static var textStyleTwo20 = GoogleFonts.playfairDisplay(
+  static final textStyleTwo20 = GoogleFonts.playfairDisplay(
     fontSize: 20,
     fontWeight: FontWeight.normal,
   );
-  static var textStyle30 = GoogleFonts.playfairDisplay(
+  static final textStyle30 = GoogleFonts.playfairDisplay(
     fontSize: 30,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.bold,
   );
 }
