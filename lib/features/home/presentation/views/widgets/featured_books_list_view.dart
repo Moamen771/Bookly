@@ -25,8 +25,17 @@ class FeaturedBooksListView extends StatelessWidget {
                 onTap: () {
                   GoRouter.of(context).push(AppRouter.bookDetailsView);
                 },
-                child: CustomBookImage(
-                  imageUrl: state.books[index].volumeInfo.imageLinks.thumbnail,
+                child: GestureDetector(
+                  onTap: () {
+                    GoRouter.of(context).push(
+                      AppRouter.bookDetailsView,
+                      extra: state.books[index],
+                    );
+                  },
+                  child: CustomBookImage(
+                    imageUrl:
+                        state.books[index].volumeInfo.imageLinks.thumbnail,
+                  ),
                 ),
               ),
             ),
